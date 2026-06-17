@@ -233,6 +233,7 @@ endif
 ########### HAL_RTL8852A #################################
 ifeq ($(CONFIG_RTL8852A), y)
 IC_NAME := rtl8852a
+ccflags-y += -DCONFIG_RTL8852A
 ifeq ($(CONFIG_USB_HCI), y)
 MODULE_NAME = 8852au
 endif
@@ -248,6 +249,7 @@ endif
 ########### HAL_RTL8852B #################################
 ifeq ($(CONFIG_RTL8852B), y)
 IC_NAME := rtl8852b
+ccflags-y += -DCONFIG_RTL8852B
 ifeq ($(CONFIG_USB_HCI), y)
 MODULE_NAME = 8852bu
 endif
@@ -263,6 +265,7 @@ endif
 ########### HAL_RTL8852BP #################################
 ifeq ($(CONFIG_RTL8852BP), y)
 IC_NAME := rtl8852bp
+ccflags-y += -DCONFIG_RTL8852BP
 ifeq ($(CONFIG_USB_HCI), y)
 MODULE_NAME = 8852bpu
 endif
@@ -278,6 +281,7 @@ endif
 ########### HAL_RTL8851B #################################
 ifeq ($(CONFIG_RTL8851B), y)
 IC_NAME := rtl8851b
+ccflags-y += -DCONFIG_RTL8851B
 ifeq ($(CONFIG_USB_HCI), y)
 MODULE_NAME = 8851bu
 endif
@@ -293,6 +297,7 @@ endif
 ########### HAL_RTL8852C #################################
 ifeq ($(CONFIG_RTL8852C), y)
 IC_NAME := rtl8852c
+ccflags-y += -DCONFIG_RTL8852C
 ifeq ($(CONFIG_USB_HCI), y)
 MODULE_NAME = 8852cu
 endif
