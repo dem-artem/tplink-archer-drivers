@@ -25,6 +25,7 @@ ccflags-y += -Wno-date-time	# Fix compile error && warning on gcc 4.9 and later
 endif
 
 ccflags-y += -I$(src)/include
+ccflags-y += -I$(src)/core/crypto
 
 EXTRA_LDFLAGS += --strip-debug
 
