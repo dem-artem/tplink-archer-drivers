@@ -4447,6 +4447,7 @@ static int cfg80211_rtw_get_txpower(struct wiphy *wiphy,
 #endif
 #if (LINUX_VERSION_CODE >= KERNEL_VERSION(6, 17, 0))
 	int link_id,
+	unsigned int link_id2,
 #elif (LINUX_VERSION_CODE >= KERNEL_VERSION(5, 8, 0))
 	unsigned int link_id,
 #endif
